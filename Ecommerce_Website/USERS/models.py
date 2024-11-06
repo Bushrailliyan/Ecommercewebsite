@@ -24,6 +24,7 @@ class Customer(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
     address = models.TextField()
+    pincode = models.IntegerField()
     phone = models.IntegerField()
 
 

@@ -327,28 +327,6 @@ input:focus{
     flex-basis: 24%;
     cursor: pointer;
 }
-.form-cart{
-    width: 90px;
-    height: 150px;
-
-}
-button {
-width: 120px;
-
-height: 60px;
-
-border-radius: 50%;
-
-background-color: #ea7434;
-
-color: #fff;
-
-border: none;
-
-font-size: 16px;
-
-cursor: pointer;}
-
 
 /* Cart Items */
 .cart-page{
@@ -410,7 +388,7 @@ th:last-child{
 .form-container{
     background: #fff;
     width: 300px;
-    height: 500px;
+    height: 400px;
     position: relative;
     text-align: center;
     padding: 20px 0;

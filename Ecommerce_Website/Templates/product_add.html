@@ -1,0 +1,27 @@
+{% extends 'company_homepage.html'%}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block compbanner %}{% endblock compbanner %}
+{% block add %}
+<style>
+body{
+    background-color: #F6B6BE;
+   }
+form { margin:10%;
+
+   }
+
+</style>
+<h3>Load your products</h3>
+<div>
+
+<form action="add_product" method="post">
+    {% csrf_token %}
+{{form | crispy }}
+    <input type="submit" name="Add Products">
+
+</form>
+    </div>
+
+{% endblock add %}

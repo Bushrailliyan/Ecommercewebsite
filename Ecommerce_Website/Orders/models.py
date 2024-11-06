@@ -4,9 +4,8 @@ from Products.models import Product
 from Carts.models import CartItem
 # Create your models here.
 ORDER_STATUS =(
-    ("ORDER CONFIRMED","order confirmed"),
+    ("ORDER PROCESSED","order processed"),
     ("ORDER SHIPPED","order shipped"),
-    ("ORDER DELIVERED","order delivered")
 )
 
 class OrderedItem(models.Model):

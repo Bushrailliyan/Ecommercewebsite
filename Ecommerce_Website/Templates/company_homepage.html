@@ -5,20 +5,32 @@
     <div class="header">
         <div class="container">
 
-            {% include 'navbar.html' %}
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="{% static 'images/logo1.png' %}" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="{% url 'company_home' %}">Home</a></li>
+                        <li><a href="{% url 'addproduct' %}">Add Products</a></li>
+                        <li><a href="{% url 'updateproduct' %}">Product Update</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+
+</div>
 
         </div>
     </div>
+{% block compbanner %}
 
-{% block banner %}{% endblock banner %}
+{% include 'companybanner.html' %}
 
-{% block products %}{% endblock products %}
+{% endblock compbanner %}
 
-{% block product_detail %}{% endblock product_detail %}
-
-{% block cartcontent %}{% endblock cartcontent %}
-{% block checkout %}{% endblock checkout %}
-
+{% block add %}{% endblock add %}
+{% block update %}{% endblock update %}
     <!-- Footer -->
     <div class="footer">
         <div class="container">

@@ -1,0 +1,39 @@
+{% extends 'company_homepage.html'%}
+
+{% block compbanner %}{% endblock compbanner %}
+
+{% block update %}
+
+<style>
+body{
+    background-color: #F6B6BE;
+   }
+form { margin:10%;
+
+   }
+
+</style>
+
+<h3> *****Update your Products*****</h3>
+
+<form action="update_product" method="post">
+
+    {% csrf_token %}
+Old Product: <input type="text" name="oldname"><br><br>
+Old Price: <input type="text" name="oldprice"><br><br>
+    New Product: <input type="text" name="newname"><br><br>
+    New Price: <input type="text" name="newprice"><br><br>
+    <input type="submit" value="Update">
+
+    {{msg}}
+
+</form>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <h3>*****Remove Product*****</h3><br><br>
+Which product need to Remove:<input type="text" name="name"><br><br>
+    <input type="submit" value="Delete"><br>
+
+</form>
+{% endblock update %}
