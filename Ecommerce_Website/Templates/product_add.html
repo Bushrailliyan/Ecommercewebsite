@@ -16,10 +16,10 @@ form { margin:10%;
 <h3>Load your products</h3>
 <div>
 
-<form action="add_product" method="post">
+<form action="add_product" method="post" enctype="multipart/form-data">
     {% csrf_token %}
-{{form | crispy }}
-    <input type="submit" name="Add Products">
+{{form|crispy}}
+    <input type="submit" value="Add Products">
 
 </form>
     </div>
