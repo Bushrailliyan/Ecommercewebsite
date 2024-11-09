@@ -3,6 +3,7 @@ from .import views
 
 urlpatterns = [
     path('',views.home,name='home'),
+    path('show_account',views.Showaccount,name='account'),
     path('prod_list',views.Product_list,name='listproduct'),
     path('prod_detail',views.Product_Detail,name='product_details'),
     #path('company',views.Company,name='company_home'),

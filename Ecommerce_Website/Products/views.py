@@ -8,6 +8,9 @@ from .models import Product
 def home(request):
     return render(request,'home.html')
 
+def Showaccount(request):
+    return render(request,'account.html')
+
 def Add_Product(request):
     if request.method == 'post':
         form = AddProductform(request.post,request.FILES)
